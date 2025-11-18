@@ -17,3 +17,20 @@ int main() {
 
     return 0;
 }
+
+
+void inputData(Produk data[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << "Nama Produk ke-" << i + 1 << ": ";
+        cin.ignore();
+        getline(cin, data[i].namaProduk);
+        cout << "Harga per-unit: ";
+        cin >> data[i].hargaPerUnit;
+        cout << "Jumlah Unit: ";
+        cin >> data[i].jumlahUnit;
+        cout << "Unit yang Terjual: ";
+        cin >> data[i].unitTerjual;
+        cout << endl;
+    }
+}
+
